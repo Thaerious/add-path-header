@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "add-path-header"
+version = "0.1.0"
+description = "Add path headers to source files"
+requires-python = ">=3.8"
+
+[project.scripts]
+add-path-header = "add_path_header:main"
+
+[tool.setuptools]
+py-modules = ["add_path_header"]
